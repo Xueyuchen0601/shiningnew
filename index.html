@@ -541,7 +541,10 @@
               </div>
             </div>
           </article>
-          <article class="service-card service-card-8 service-child reveal">
+          <article
+            class="service-card service-card-8 service-child reveal"
+            id="trust-architecture"
+          >
             <div class="service-copy">
               <div class="service-parent-label">家族信托服务</div>
               <h3>专业信托架构</h3>
@@ -641,6 +644,23 @@
                   aria-hidden="true"
                 ></i>
               </div>
+              <button
+                class="mobile-diagram-preview"
+                type="button"
+                data-mobile-lightbox="/assets/service-media/trust-architecture-mobile-lossless.webp"
+                data-lightbox-alt="专业信托架构完整高清图"
+                aria-label="放大查看专业信托架构高清图"
+              >
+                <img
+                  src="/assets/service-media/trust-architecture-mobile-lossless.webp"
+                  alt="专业信托架构完整缩略图"
+                  width="1051"
+                  height="463"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>点击查看高清图</span>
+              </button>
             </div>
           </article>
           <article class="service-card service-card-11 service-parent reveal">
@@ -698,13 +718,24 @@
               </p>
               <div class="service-groups service-groups-0"></div>
             </div>
-            <figure class="service-visual visual-bank-table">
+            <figure
+              class="service-visual visual-bank-table mobile-zoomable-figure"
+            >
               <img
                 src="/assets/service-media/private-bank-table-user.webp"
                 alt="备选私人银行历史、资产管理量、评级、资本充足率、开户门槛和时间对照表"
                 loading="lazy"
                 decoding="async"
               />
+              <button
+                class="mobile-zoom-trigger"
+                type="button"
+                data-mobile-lightbox="/assets/service-media/private-bank-table-user.webp"
+                data-lightbox-alt="备选私人银行一览高清图"
+                aria-label="放大查看备选私人银行一览高清图"
+              >
+                <span>点击查看高清图</span>
+              </button>
             </figure>
           </article>
           <article class="service-card service-card-13 reveal">
@@ -896,7 +927,7 @@
               </div>
             </div>
             <figure
-              class="service-visual visual-fitted-image visual-migration-map"
+              class="service-visual visual-fitted-image visual-migration-map mobile-zoomable-figure"
             >
               <img
                 src="/assets/service-media/global-migration-map-final.webp"
@@ -904,6 +935,15 @@
                 loading="lazy"
                 decoding="async"
               />
+              <button
+                class="mobile-zoom-trigger"
+                type="button"
+                data-mobile-lightbox="/assets/service-media/global-migration-map-final.webp"
+                data-lightbox-alt="全球移民与服务版图高清图"
+                aria-label="放大查看全球移民与服务版图高清图"
+              >
+                <span>点击查看高清图</span>
+              </button>
             </figure>
           </article>
           <article class="service-card service-card-17 reveal">
@@ -1204,6 +1244,26 @@
         </div>
       </footer>
     </main>
+    <div
+      class="mobile-image-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="高清图片查看"
+      aria-hidden="true"
+      hidden
+    >
+      <button
+        class="mobile-image-lightbox-close"
+        type="button"
+        aria-label="关闭高清图片"
+      >
+        ×
+      </button>
+      <div class="mobile-image-lightbox-scroll">
+        <img src="" alt="" />
+      </div>
+      <p>双指缩放或左右拖动查看细节</p>
+    </div>
     <script src="/script.js" defer></script>
   </body>
 </html>
